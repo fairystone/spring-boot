@@ -1,0 +1,7 @@
+server:
+    port: 9292
+logging:
+    level:
+        org.springframework: DEBUG
+##Si nous lançons l’application sans paramètre supplémentaire, la première configuration sera appliquée : port HTTP = 9090 et level log = INFO (valeur par défaut de Spring Boot) ;
+##par contre, si nous lançons l’application avec le paramètre suivant --spring.profiles.active=test, alors la configuration suivante sera appliqué : port HTTP = 9292 et level log = DEBUG.
